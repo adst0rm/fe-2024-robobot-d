@@ -8,11 +8,11 @@ This repository provides information about the building and programming process 
 ![Alt text](/vehicle-photos/vehicle-with-camera-2023.jpeg?raw=true "Asembled Vehicle")
 ## Content
 
-* `team-photos` contains 2 photos of the team (an official one and one funny photo).
-* `vehicle-photos` contains 6 photos of the vehicle (from every side, top and bottom).
-* `video` contains the video.md file with the link to a video with a driving demonstration.
+* `Photo of Team` contains 2 photos of the team (an official one and one funny photo).
+* `Robot-Photo` contains 6 photos of the vehicle (from every side, top and bottom).
+* `Video` contains the video.md file with the link to a video with a driving demonstration.
 * `schematics` contains schematic diagrams of the electromechanical components, illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
-* `src` contains code of control software for all components which were programmed to participate in the competition.
+* `Program_Code` contains the code of control software for all components which were programmed to participate in the competition.
 * `models` contains all the 3D-printed parts of the vehicle. 
 * `other` contains the PCBs of the vehicle and the datasheets of all the components.
 * `YouTube Channel` All public videos are uploaded at https://www.youtube.com/channel/UCMpIuC9MiNL4U_FDTKrd1CQ
