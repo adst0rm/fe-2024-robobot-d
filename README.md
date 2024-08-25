@@ -3,7 +3,7 @@
  
  Members: Temirgaleev Alan, Ergen Adil
 
- ![logo]([./Images/README_photos/Robotek.png](https://github.com/user-attachments/assets/75ebb09f-382b-44bf-8ae9-2eff76b1ed9b))
+ [https://github.com/user-attachments/assets/75ebb09f-382b-44bf-8ae9-2eff76b1ed9b]
 </div>
 
 ***
