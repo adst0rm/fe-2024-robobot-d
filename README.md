@@ -1,3 +1,14 @@
+<div align=center>
+ ROBOBOT_D team's repository for WRO Future Engineers 2024 - Republican Stage
+ 
+ Members: Temirgaleev Alan, Ergen Adil
+
+ ![logo]([./Images/README_photos/Robotek.png](https://github.com/user-attachments/assets/75ebb09f-382b-44bf-8ae9-2eff76b1ed9b))
+</div>
+
+***
+
+
 
 Engineering materials
 ====
@@ -5,8 +16,6 @@ Engineering materials
 
 This repository provides information about the building and programming process of our self-driving car for the Future Engineers 2023 competition. Since this is our third year participating in this competition we have updated our robot even more to be more controllable, compact and precise, remaking it almost entirely.
 
-![Alt text](![Green and White Creative Robot Logo](https://github.com/user-attachments/assets/75ebb09f-382b-44bf-8ae9-2eff76b1ed9b)
-)
 ## Content
 
 * `Photo of Team` contains 2 photos of the team (an official one and one funny photo).
