@@ -3,7 +3,8 @@
  
  Members: Temirgaleev Alan, Ergen Adil
 
- [https://github.com/user-attachments/assets/75ebb09f-382b-44bf-8ae9-2eff76b1ed9b]
+ ![Green and White Creative Robot Logo](https://github.com/user-attachments/assets/85363e8c-e6a4-487a-b768-3a5f3a600cf6)
+
 </div>
 
 ***
