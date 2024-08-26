@@ -99,7 +99,7 @@ Our chassis design is based on the Ackerman driving geometry, which allows for m
 [Electroschemes/wiring diagrams]()
   
 ## Sense management </br>
-  The Robobot-D robot was driven by a Lego EV3 medium motor via the rear axle with differential (better cornering). For steering, we also used a Lego EV3 Medium motor connected to a steering device. To make the bot drive as straight as possible, we initially installed a Lego gyro sensor, which was reset after the start and then measured the turning position. Furthermore, a Lego color sensor detects if a colored line is crossed. This is useful for counting sections and stopping after three laps on the one hand, and initiating a turn on the other. Before an obstacle race, we mount the aforementioned PixyCam to drive around the red and green obstacles. We were not able to distinguish the thick and colored lines from the obstacles with the camera and to evaluate them in a meaningful way to do without a color sensor. During a race without obstacles, the robot also orientates itself with the help of two Lego ultrasonic sensors, which measure the distances to the walls. One of them measure to the left side and the other to the front side. For a higher speed, we installed a Lego EV3 Large motor with transmission after the German final. But in the curves we have to slow down the speed to recognize the colored lines because we had troubles with it.
+  The Robobot-D robot was driven by a Lego EV3 medium motor via the rear axle with differential (better cornering). For steering, we also used a Lego EV3 Medium motor connected to a steering device. To make the bot drive as straight as possible, we initially installed a Lego gyro sensor, which was reset after the start and then measured the turning position. Furthermore, a Lego color sensor detects if a colored line is crossed. This is useful for counting sections and stopping after three laps on the one hand, and initiating a turn on the other. Before an obstacle race, we mount the aforementioned PixyCam to drive around the red and green obstacles. We were not able to distinguish the thick and colored lines from the obstacles with the camera and to evaluate them in a meaningful way to do without a color sensor. During a race without obstacles, the robot also orientates itself with the help of two Lego ultrasonic sensors, which measure the distances to the walls. One of them measure to the left side and the other to the front side. For a higher speed, we installed a Lego EV3 Large motor with transmission after the regional final. But in the curves we have to slow down the speed to recognize the colored lines because we had troubles with it.
 
 # <hr/>
 <!-- 
@@ -143,7 +143,6 @@ To calculate linear function we use this site: <a href="desmos.com">https://plan
 <tr>
 <th width=250>
   
-![alt text](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Obstacle_Management/ICON%20PIxyMon%20v2.png)
 <p> 
 PixyMon v2 application
 </p>
@@ -155,7 +154,7 @@ PixyMon v2 application
 <tr>
 <th width=400>
 
-![alt text](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Obstacle_Management/Pixy_Block.png)
+
 <p>
 Pixy block for LEGO MINDSTORMS
 </p>
