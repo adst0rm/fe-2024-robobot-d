@@ -22,7 +22,7 @@ This repository contains all important files and information about our autonomou
 * `Photo of Team` contains 2 photos of the team (an official one and one funny photo).
 * `Robot-Photo` contains 6 photos of the vehicle (from every side, top and bottom).
 * `Video` contains the video.md file with the link to a video with a driving demonstration.
-* `schematics` contains schematic diagrams of the electromechanical components, illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
+* `Technical drawing` contains schematic diagrams of the electromechanical components, illustrating all the elements (electronic components and motors) used in the vehicle and how they connect to each other.
 * `Program_Code` contains the code of control software for all components which were programmed to participate in the competition.
 * `models` contains all the 3D-printed parts of the vehicle. 
 * `other` contains the PCBs of the vehicle and the datasheets of all the components.
@@ -69,10 +69,16 @@ Our chassis design is based on the Ackerman driving geometry, which allows for m
 </div>
 
 ### Motor selection
-  We have a choice between 2 types of LEGO motors: large motor and medium motor, the large motor is powerful but the speed is lower, the medium motor is not that powerful but have a great speed. The comparison can be viewed by this link: <a href="https://www.eurobricks.com/forum/index.php?/forums/topic/87670-ev3-large-and-medium-motors-comparison/">https://www.eurobricks.com/forum/index.php?/forums/topic/87670-ev3-large-and-medium-motors-comparison/</a>. According to <a href="https://www.researchgate.net/publication/345182894_Dynamic_analysis_modeling_and_control_of_the_LEGO_EV3_modular_mobile_platform">research:</a> 
+  We have a choice between 2 types of LEGO motors: large motor and medium motor, the large motor is powerful but the speed is lower, the medium motor is not that powerful but have a great speed. In the end, The Robobot-D robot was driven by a Lego EV3 medium motor via the rear axle with differential (better cornering). For steering, we also used a Lego EV3 Medium motor connected to a steering device. To make the bot drive as straight as possible, we initially installed a Lego gyro sensor, which was reset after the start and then measured the turning position.
   
-* Large servo motor (actuator) - maximum operating speed of 170 rpm, torque of 0.2 Nm and stopping torque of 0.4 Nm. It is positioned in the engine case an integrated encoder, a rotation meter, whose step is 1 degree of rotation and least sampling time 0.001 s.Also the power and speed is regulated by gear wheels and the size of the wheels. We choosed smaller wheels in steering mechanism because they do not move the robot, the only moves its trajectory.
+* Large servo motor (actuator) -The Large Motor block controls a Large Motor. You can turn a motor on or off, control its power level, or turn the motor on for a specified amount of time or rotation.
+![image](https://github.com/user-attachments/assets/2422e364-e3d2-4ca9-9e32-c1ca85810b42)
+![image](https://github.com/user-attachments/assets/957359f1-9d8b-483c-a02f-d8a71c482054)
+
+
 * Medium-size servo motor - maximum speed of 250 rpm, running torque 0.08 Nm and stopping torque of 0.12 Nm, also with integrated encoder, identical to that of a large engine.
+* ![image](https://github.com/user-attachments/assets/089aceea-fc7a-44a3-97cb-29c6a3e55f1e)
+
 </br>
 ![image](https://github.com/user-attachments/assets/a3d1abf4-5a25-4fcb-afde-c9561737f7cf)
 
@@ -84,7 +90,7 @@ Our chassis design is based on the Ackerman driving geometry, which allows for m
 # <hr/>
 # Power and sense management </br>
 ## Power management </br>
-  The core of our robot is <a href="#">EV3 Programmable Brick</a>, the power comes from a rechargable 10V Lithium Battery. EV3 P-Brick have 4 ports for motors and 4 ports for sensors.  Power consumption of motors and sensors: <a href="https://www.dexterindustries.com/ev3-current-consumption-measurement/">https://www.dexterindustries.com/ev3-current-consumption-measurement/</a>.
+  The core of our robot is <a href="#">EV3 Programmable Brick</a>, the power comes from a rechargable 10V Lithium Battery. EV3 P-Brick have 4 ports for motors and 4 ports for sensors. 
   <table>
 <tr>
 <th width=400>
@@ -97,8 +103,7 @@ Our chassis design is based on the Ackerman driving geometry, which allows for m
 [Electroschemes/wiring diagrams]()
   
 ## Sense management </br>
-  UART sensors of LEGO EDUCATION MINDSTORMS EV3 Core Set such as color, ultrasonic and gyro sensors are used for sense management of our robot. </br>
-  The Gyro sensor is used to save the initial robot position in degrees and count the deviation from it. Ultrasonic sensor measures the distance from robot to wall. Color sensor is used to know the driving direction of the round. Encoders in medium motors are used to know the distance that robot moved. Our programm uses mix of this sensors to create the odometry of our robot, by the usage of encoders, gyro sensor and Pythagoras theorem we calculate the displacement that robot moves from initial positions and convert it to x and y coordinates. Before the first line in first lap the odometry is relative to the robot's initial position. After the color sensor views the line it recognizes robot direction. By specific math formulas it converts relative odometry to full odometry of the map, the center of the map is the center of odometry where x and y coordinates are equal to zero. Ultrasonic sensor and Gyro sensor in combine used to fix odometry also by Pythagoras theorem and exceptions for the situations when ultrasonic sensor view blocks. The detailed infprmation of sense management will be below.
+  The Robobot-D robot was driven by a Lego EV3 medium motor via the rear axle with differential (better cornering). For steering, we also used a Lego EV3 Medium motor connected to a steering device. To make the bot drive as straight as possible, we initially installed a Lego gyro sensor, which was reset after the start and then measured the turning position. Furthermore, a Lego color sensor detects if a colored line is crossed. This is useful for counting sections and stopping after three laps on the one hand, and initiating a turn on the other. Before an obstacle race, we mount the aforementioned PixyCam to drive around the red and green obstacles. We were not able to distinguish the thick and colored lines from the obstacles with the camera and to evaluate them in a meaningful way to do without a color sensor. During a race without obstacles, the robot also orientates itself with the help of two Lego ultrasonic sensors, which measure the distances to the walls. One of them measure to the left side and the other to the front side. For a higher speed, we installed a Lego EV3 Large motor with transmission after the German final. But in the curves we have to slow down the speed to recognize the colored lines because we had troubles with it.
   * [color sensor](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Power_and_Sense_Management/color_sensor.md)
   * [ultrasonic sensor](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Power_and_Sense_Management/ultrasonic_sensor.md)
   * [gyro_sensor sensor](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Power_and_Sense_Management/gyro_sensor.md)
@@ -167,9 +172,6 @@ Pixy block for LEGO MINDSTORMS
 </tr>
 </table>
 </div>
-
-  * [Pixy2 camera's configuration](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Obstacle_management/README.md)
-  * [Programm part for obstacle detection](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Obstacle_management/Pixy_for_programm.md)
 
 # <hr/>
 
