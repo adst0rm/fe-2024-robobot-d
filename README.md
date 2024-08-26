@@ -79,14 +79,10 @@ Our chassis design is based on the Ackerman driving geometry, which allows for m
 * Medium-size servo motor - maximum speed of 250 rpm, running torque 0.08 Nm and stopping torque of 0.12 Nm, also with integrated encoder, identical to that of a large engine.
 * ![image](https://github.com/user-attachments/assets/089aceea-fc7a-44a3-97cb-29c6a3e55f1e)
 
-</br>
-![image](https://github.com/user-attachments/assets/a3d1abf4-5a25-4fcb-afde-c9561737f7cf)
+</br>![image](https://github.com/user-attachments/assets/39789d3a-ae00-4139-8728-5525c9ea616f)
 
-</br>
-  The explanation of our construction design is on our youtube channel <a href="https://www.youtube.com/channel/UC0_5yZ2aPdJc0X5wtIw4ZcA">"QZO Flame" (tag: @QZOFlame)</a>.
+
    
-   * [Building Instructions](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Building_Instructions/README.md)
-   * [3D model of Pixy Camera_Case](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/3D_models/README.md)
 # <hr/>
 # Power and sense management </br>
 ## Power management </br>
