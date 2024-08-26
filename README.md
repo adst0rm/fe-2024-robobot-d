@@ -26,7 +26,7 @@ This repository contains all important files and information about our autonomou
 * `Program_Code` contains the code of control software for all components which were programmed to participate in the competition.
 * `models` contains all the 3D-printed parts of the vehicle. 
 * `other` contains the PCBs of the vehicle and the datasheets of all the components.
-* `YouTube Channel` All public videos are uploaded at https://www.youtube.com/channel/UCMpIuC9MiNL4U_FDTKrd1CQ
+
 
  ## Detailed content
 
