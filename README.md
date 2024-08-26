@@ -15,7 +15,7 @@ Engineering materials
 ====
 ## Introduction
 
-This repository contains all important files and information about our autonomous driving car "Robobot-D". As a base/microcontroller we chose the Lego Mindstorms EV3, which we equipped with the PixyCam CMUcam5 V1 (Lego Mindstorms version) for object recognition. The reasons for choosing the EV3 were the high reliability as well as the already existing knowledge and experience with the system from Lego incl. programming. The software ran on an EV3 brick with the original Lego Mindstorms EV3 firmware. For the Germany finals, we went a step further and tried to program the EV3 brick based on the EV3G using some additional blocks. Hope was increased flexibility and versatility, but reliability was lacking.
+This repository contains all important files and information about our autonomous driving car "Robobot-D". As a base/microcontroller we chose the Lego Mindstorms EV3, which we equipped with the PixyCam CMUcam5 V1 (Lego Mindstorms version) for object recognition. The reasons for choosing the EV3 were the high reliability as well as the already existing knowledge and experience with the system from Lego incl. programming. The software ran on an EV3 brick with the original Lego Mindstorms EV3 firmware. We went a step further for the National finals and tried to program the EV3 brick based on the EV3G using some additional blocks. Hope was increased flexibility and versatility, but reliability was lacking.
 
 ## Main content
 
@@ -46,54 +46,26 @@ This repository contains all important files and information about our autonomou
 * [**Engineering factor**](#engineering-factor)
 
 # Mobility Management
-<p>   Our robot is designed by lego, especially we used LEGO MINDSTORMS Education Core Set(Serial number 45544) and other LEGO EV3 sets: EV3 Expansion Set, EV3 Homeschool Combo Pack and others. You can view all of the LEGO EV3 sets by this link: <a href="https://www.bricklink.com/catalogList.asp?catType=S&catString=166.59.800">https://www.bricklink.com/catalogList.asp?catType=S&catString=166.59.800</a>. Robot's wheels are taken from LEGO SPIKE Prime set and its expansion set(serial numbers 45678-1 and  45680-1). </p> </br>
+<p>   Our robot is constructed using LEGO components, specifically the LEGO MINDSTORMS Education Core Set (Serial number 45544) along with various other LEGO EV3 sets, including the EV3 Expansion Set, the EV3 Homeschool Combo Pack, and more. The robot's wheels are sourced from the LEGO Technic set and its expansion set. </p> </br>
   
-<p>   For better stability we used differential with two motors at the rear axle and steering control as required in the rules, our robot's size is 19.5cm (length); 13.5cm(width) and 27cm(height). We constructed the robot as small as possible to fit into the parking area by the situation below: </p>
-
-<div align=center>
-<table>
-<tr>
-<th width=250>
-  
-![alt text](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/concepts/parking-situation.png) </br>
-</th>
-</tr>
-</table>
-</div>
 
 ### Chassis design and differential
-The base of our chassis design comes from Ackerman steering model geometry. It improves maintainabiity of the robot as it controls the smoothness of the turns because of the maximum degrees of the steering can move
-We have a differential in driving rear axle of our robot to make turns smoother. If robot turns one wheel will move slower than second and it reduces radius of the turn so our robot turn is controlled by 2 mechanisms: steering mechanism and differential.
+Our chassis design is based on the Ackerman driving geometry, which allows for maximum steering angles and improves the robot's ability to turn smoothly. The rear axle has a differential installed in order to improve turning even more. The turning radius is lowered when one tire rotates more slowly than the other during a turn because of this difference. Thus, the steering system and the differential are the two main parts that control our robot's turning.
 <table>
 <tr>
 <th width=250>
 
-![alt text](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/concepts/Ackermann_simple_design.png)
-</th>
-</tr>
-</table>
+![image](https://github.com/user-attachments/assets/282ffcd7-f450-4515-aed0-8ff8df879a8c)
 
-<table>
-<tr>
-<th colspan=1 rowspan=1>
-  
-![alt text](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Building_Instructions/Steering_control.png)
-Our robot's steering control construction
-</th>
-<th colspan=2 rowspan=1>
-  
-![alt text](https://github.com/QZOFlameFE/FE2024_1st_repo_ByFlame/blob/main/Instructions/Building_Instructions/Differential.png)
-Our robot's differential at rear axle
 
-</th>
-</tr>
-</table>
 
 ### Weight distribution
-  As our robot is a self-driving car with steering mechanism and differential in rear axle we need to make our robot slight heavy, and distribute weight a bit behind the center of our robot to prevent the wheels from slipping. The slipping of the wheels in rear axle impacts our odometry and the programm.
+  Since our robot is an autonomous vehicle with a steering system and a differential in the back axle, we must make it somewhat heavier and disperse the weight behind the center of the vehicle to keep the wheels from slipping. Our odometry and the program are affected by the wheels sliding on the back axle.
+
   
 ### Camera position
-  Our camera places as much higher and behind as its possible for better view and obstacle control. It also inclined a bit down to view blocks that are close to robot and limit the view for better obstacle management.
+  For the best vision and obstacle management, our camera is positioned as far back and higher than is practical. In order to improve obstacle management, it was also slightly slanted downward to show blocks that were near the robot and to restrict the view.
+
 </div>
 
 ### Motor selection
@@ -102,7 +74,8 @@ Our robot's differential at rear axle
 * Large servo motor (actuator) - maximum operating speed of 170 rpm, torque of 0.2 Nm and stopping torque of 0.4 Nm. It is positioned in the engine case an integrated encoder, a rotation meter, whose step is 1 degree of rotation and least sampling time 0.001 s.Also the power and speed is regulated by gear wheels and the size of the wheels. We choosed smaller wheels in steering mechanism because they do not move the robot, the only moves its trajectory.
 * Medium-size servo motor - maximum speed of 250 rpm, running torque 0.08 Nm and stopping torque of 0.12 Nm, also with integrated encoder, identical to that of a large engine.
 </br>
-Also the wheels have low coefficient of friction to avoid loss of energy, but for wheels in the rear axles it will be better to choose wheels with a bit high cofficient of friction to avoid slipping of wheels. The rear wheels are bigger than wheels in front axle to have a better stability, movement control and the speed. It will be better to choose little smaller rear wheels than our. 
+![image](https://github.com/user-attachments/assets/a3d1abf4-5a25-4fcb-afde-c9561737f7cf)
+
 </br>
   The explanation of our construction design is on our youtube channel <a href="https://www.youtube.com/channel/UC0_5yZ2aPdJc0X5wtIw4ZcA">"QZO Flame" (tag: @QZOFlame)</a>.
    
@@ -242,10 +215,8 @@ Pixy block for LEGO MINDSTORMS
   For the programming we used <a href="">LEGO MINDSTORMS</a> application. 
 # <hr/>
 
-## Structure
 
-This year we are reusing the structure from last year, a RC toy car (the WLtoys k989). We removed the rear differential case to make it front drive, and we put two optical encoders connected to the rear wheels in the new free space.
-But the most important change is that we removed the aluminium base and replaced it with our new PCB. This PCB is made by us: we insolated a photo-sensible PCB, put green solder mask on it and soldered all the connections and vias. The components are almost all soldered in SMD (surface mounted) by hand, we even had to use a digital microscope.
+# Our previous robot's construction
 
 ## Electronics
 
@@ -264,8 +235,6 @@ This microcontroller also sends its sensor data via SPI communication to the mas
 ### Master
 
 This microcontroller is in charge of the main program which uses all the information received from the slaves to control the entire robot (mainly the direction servo and the motor) to complete the challenge.
-
-![Alt text](/vehicle-photos/bottom-side-2023.jpeg?raw=true "PCB Bottom")
 ## Programming modules
 
 Having in mind that there are three programs (for each microcontroller), we can also group parts of all the code in groups regarding its purpose.
@@ -289,9 +258,9 @@ The I2C 32U4, the one with the camera, then sends the number we assigned of the 
 
 ## Debugging with graphs and telemetry
 
-For debugging purposes we included a HC-05 bluetooth module in the vehicle, only used during testing and debuggin, during the competition it will be disconnected. For ease of analyzing the information sent by the robot we use a graphing application made with Python by our friend Maria Pilligua uploaded to her [GitHub repository](https://github.com/mpilligua/app_wro). With this we can see values like the speed or the distance counted from the encoders and view it in the style of Formula 1 telemetry which is more practical for comparing it to earlier tests.
+For debugging purposes we included a HC-05 bluetooth module in the vehicle, only used during testing and debuggin, during the competition it will be disconnected. With this we can see values like the speed or the distance counted from the encoders and view it in the style of Formula 1 telemetry which is more practical for comparing it to earlier tests.
 
 ## Code building, compiling and uploading process
 
 We programmed all using the Arduino IDE like any Arduino board, but because we use the 32U4 microcontrollers directly we have to flash the bootloader to each 32U4. We flashed the Arduino Leonardo bootloader because it uses this microcontroller and we are very familiar with it. The process for flashing it requires you to connect the 32U4 to another Arduino using the ICSP communication, then the normal Arduino acts as an ISP programmer (using the example code ArduinoISP) and flashes your 32U4 with the selected bootloader.
-Because this was our first time doing this we used this [SparkFun guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all) and this [Arduino guide](https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoISP).
+Because this was our first time doing this we used this 
